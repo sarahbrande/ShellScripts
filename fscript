@@ -1,0 +1,5 @@
+rm out.txt
+while read p; do
+    cat people.txt | grep $p >> out.txt
+done < /home/sarah/ages.txt
+cat out.txt
